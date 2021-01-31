@@ -3,7 +3,7 @@
         <jet-banner />
 
         <div class="min-h-screen bg-gray-100">
-            <nav class="bg-white border-b border-gray-100">
+            <nav class="bg-purple-600 border-b border-gray-500">
                 <!-- Primary Navigation Menu -->
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between h-16">
@@ -11,13 +11,13 @@
                             <!-- Logo -->
                             <div class="flex-shrink-0 flex items-center">
                                 <inertia-link :href="route('dashboard')">
-                                    <jet-application-mark class="block h-9 w-auto" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 93.684 93.683"><g xmlns="http://www.w3.org/2000/svg"><path d="M40.655 43.629c-2.67-5.509-5.893-11.272-9.227-18.153 6.102 0 9.126.025 13.678-.006 12.123-.083 20.357 3.042 25.542 15.494a70.053 70.053 0 011.022 2.649l22.013-.018C89.617 24.338 74.188 8.289 57.324 8.143L0 8.072l12.286 23.8c8.007 13.519 10.846 11.847 28.369 11.757zM70.648 52.791c-5.186 12.451-13.42 15.578-25.542 15.494-4.552-.031-7.576-.005-13.678-.005 3.334-6.882 6.557-12.646 9.227-18.153-17.522-.091-20.361-1.764-28.368 11.756L0 85.606l57.324.006c16.863-.146 32.293-16.271 36.358-35.528l-22.012.059a69.149 69.149 0 01-1.022 2.648z" fill="#55007c" data-original="#000000"/></g></svg>
                                 </inertia-link>
                             </div>
 
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                                <jet-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
+                                <jet-nav-link class="text-purple-200 font-bold	text-lg" :href="route('dashboard')" :active="route().current('dashboard')">
                                     Dashboard
                                 </jet-nav-link>
                             </div>
