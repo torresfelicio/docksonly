@@ -12,31 +12,34 @@
 
         <form @submit.prevent="submit">
             <div>
-                <jet-label for="email" value="Email" />
+                <jet-label class="text-purple-200 font-bold	text-lg" for="email" value="Email" />
                 <jet-input id="email" type="email" class="mt-1 block w-full" v-model="form.email" required autofocus />
             </div>
 
             <div class="mt-4">
-                <jet-label for="password" value="Password" />
+                <jet-label class="text-purple-200 font-bold	text-lg" for="password" value="Password" />
                 <jet-input id="password" type="password" class="mt-1 block w-full" v-model="form.password" required autocomplete="current-password" />
             </div>
 
             <div class="block mt-4">
                 <label class="flex items-center">
                     <jet-checkbox name="remember" v-model="form.remember" />
-                    <span class="ml-2 text-sm text-gray-600">Remember me</span>
+                    <span class="ml-2 text-sm text-purple-200">Lembrar</span>
                 </label>
             </div>
 
             <div class="flex items-center justify-end mt-4">
-                <inertia-link v-if="canResetPassword" :href="route('password.request')" class="underline text-sm text-gray-600 hover:text-gray-900">
-                    Forgot your password?
+                <inertia-link v-if="canResetPassword" :href="route('password.request')" class="underline text-sm text-purple-200 hover:text-purple-900">
+                    Esqueceu sua senha?
                 </inertia-link>
 
-                <jet-button class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                <jet-button class="ml-4 bg-purple-900 hover:bg-purple-700 hover:text-purple-100" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                     Login
                 </jet-button>
             </div>
+            <inertia-link v-if="canRegister" :href="route('register')" class="text-purple-200 text-sm underline">
+                Registrar
+            </inertia-link>
         </form>
     </jet-authentication-card>
 </template>
@@ -63,7 +66,11 @@
 
         props: {
             canResetPassword: Boolean,
-            status: String
+            status: String,
+            canLogin: Boolean,
+            canRegister: Boolean,
+            laravelVersion: String,
+            phpVersion: String,
         },
 
         data() {

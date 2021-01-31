@@ -3714,122 +3714,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Auth/Login.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Auth/Login.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _Jetstream_AuthenticationCard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Jetstream/AuthenticationCard */ "./resources/js/Jetstream/AuthenticationCard.vue");
-/* harmony import */ var _Jetstream_AuthenticationCardLogo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Jetstream/AuthenticationCardLogo */ "./resources/js/Jetstream/AuthenticationCardLogo.vue");
-/* harmony import */ var _Jetstream_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Jetstream/Button */ "./resources/js/Jetstream/Button.vue");
-/* harmony import */ var _Jetstream_Input__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Jetstream/Input */ "./resources/js/Jetstream/Input.vue");
-/* harmony import */ var _Jetstream_Checkbox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Jetstream/Checkbox */ "./resources/js/Jetstream/Checkbox.vue");
-/* harmony import */ var _Jetstream_Label__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/Jetstream/Label */ "./resources/js/Jetstream/Label.vue");
-/* harmony import */ var _Jetstream_ValidationErrors__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/Jetstream/ValidationErrors */ "./resources/js/Jetstream/ValidationErrors.vue");
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  components: {
-    JetAuthenticationCard: _Jetstream_AuthenticationCard__WEBPACK_IMPORTED_MODULE_0__.default,
-    JetAuthenticationCardLogo: _Jetstream_AuthenticationCardLogo__WEBPACK_IMPORTED_MODULE_1__.default,
-    JetButton: _Jetstream_Button__WEBPACK_IMPORTED_MODULE_2__.default,
-    JetInput: _Jetstream_Input__WEBPACK_IMPORTED_MODULE_3__.default,
-    JetCheckbox: _Jetstream_Checkbox__WEBPACK_IMPORTED_MODULE_4__.default,
-    JetLabel: _Jetstream_Label__WEBPACK_IMPORTED_MODULE_5__.default,
-    JetValidationErrors: _Jetstream_ValidationErrors__WEBPACK_IMPORTED_MODULE_6__.default
-  },
-  props: {
-    canResetPassword: Boolean,
-    status: String
-  },
-  data: function data() {
-    return {
-      form: this.$inertia.form({
-        email: '',
-        password: '',
-        remember: false
-      })
-    };
-  },
-  methods: {
-    submit: function submit() {
-      var _this = this;
-
-      this.form.transform(function (data) {
-        return _objectSpread(_objectSpread({}, data), {}, {
-          remember: _this.form.remember ? 'on' : ''
-        });
-      }).post(this.route('login'), {
-        onFinish: function onFinish() {
-          return _this.form.reset('password');
-        }
-      });
-    }
-  }
-});
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Auth/Register.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Auth/Register.vue?vue&type=script&lang=js& ***!
@@ -4261,6 +4145,129 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__.default,
     Welcome: _Jetstream_Welcome__WEBPACK_IMPORTED_MODULE_1__.default
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Login.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Login.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Jetstream_AuthenticationCard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Jetstream/AuthenticationCard */ "./resources/js/Jetstream/AuthenticationCard.vue");
+/* harmony import */ var _Jetstream_AuthenticationCardLogo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Jetstream/AuthenticationCardLogo */ "./resources/js/Jetstream/AuthenticationCardLogo.vue");
+/* harmony import */ var _Jetstream_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Jetstream/Button */ "./resources/js/Jetstream/Button.vue");
+/* harmony import */ var _Jetstream_Input__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Jetstream/Input */ "./resources/js/Jetstream/Input.vue");
+/* harmony import */ var _Jetstream_Checkbox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Jetstream/Checkbox */ "./resources/js/Jetstream/Checkbox.vue");
+/* harmony import */ var _Jetstream_Label__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/Jetstream/Label */ "./resources/js/Jetstream/Label.vue");
+/* harmony import */ var _Jetstream_ValidationErrors__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/Jetstream/ValidationErrors */ "./resources/js/Jetstream/ValidationErrors.vue");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    JetAuthenticationCard: _Jetstream_AuthenticationCard__WEBPACK_IMPORTED_MODULE_0__.default,
+    JetAuthenticationCardLogo: _Jetstream_AuthenticationCardLogo__WEBPACK_IMPORTED_MODULE_1__.default,
+    JetButton: _Jetstream_Button__WEBPACK_IMPORTED_MODULE_2__.default,
+    JetInput: _Jetstream_Input__WEBPACK_IMPORTED_MODULE_3__.default,
+    JetCheckbox: _Jetstream_Checkbox__WEBPACK_IMPORTED_MODULE_4__.default,
+    JetLabel: _Jetstream_Label__WEBPACK_IMPORTED_MODULE_5__.default,
+    JetValidationErrors: _Jetstream_ValidationErrors__WEBPACK_IMPORTED_MODULE_6__.default
+  },
+  props: {
+    canResetPassword: Boolean,
+    status: String,
+    canLogin: Boolean,
+    canRegister: Boolean,
+    laravelVersion: String,
+    phpVersion: String
+  },
+  data: function data() {
+    return {
+      form: this.$inertia.form({
+        email: '',
+        password: '',
+        remember: false
+      })
+    };
+  },
+  methods: {
+    submit: function submit() {
+      var _this = this;
+
+      this.form.transform(function (data) {
+        return _objectSpread(_objectSpread({}, data), {}, {
+          remember: _this.form.remember ? 'on' : ''
+        });
+      }).post(this.route('login'), {
+        onFinish: function onFinish() {
+          return _this.form.reset('password');
+        }
+      });
+    }
   }
 });
 
@@ -26860,45 +26867,6 @@ component.options.__file = "resources/js/Pages/Auth/ForgotPassword.vue"
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Auth/Login.vue":
-/*!*******************************************!*\
-  !*** ./resources/js/Pages/Auth/Login.vue ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _Login_vue_vue_type_template_id_a2ac2cea___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Login.vue?vue&type=template&id=a2ac2cea& */ "./resources/js/Pages/Auth/Login.vue?vue&type=template&id=a2ac2cea&");
-/* harmony import */ var _Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Login.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Auth/Login.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
-  _Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _Login_vue_vue_type_template_id_a2ac2cea___WEBPACK_IMPORTED_MODULE_0__.render,
-  _Login_vue_vue_type_template_id_a2ac2cea___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/Pages/Auth/Login.vue"
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
-
-/***/ }),
-
 /***/ "./resources/js/Pages/Auth/Register.vue":
 /*!**********************************************!*\
   !*** ./resources/js/Pages/Auth/Register.vue ***!
@@ -27090,6 +27058,45 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 /* hot reload */
 if (false) { var api; }
 component.options.__file = "resources/js/Pages/Dashboard.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Login.vue":
+/*!**************************************!*\
+  !*** ./resources/js/Pages/Login.vue ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Login_vue_vue_type_template_id_0004d9e0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Login.vue?vue&type=template&id=0004d9e0& */ "./resources/js/Pages/Login.vue?vue&type=template&id=0004d9e0&");
+/* harmony import */ var _Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Login.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Login.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _Login_vue_vue_type_template_id_0004d9e0___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Login_vue_vue_type_template_id_0004d9e0___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/Login.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
@@ -28097,22 +28104,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Auth/Login.vue?vue&type=script&lang=js&":
-/*!********************************************************************!*\
-  !*** ./resources/js/Pages/Auth/Login.vue?vue&type=script&lang=js& ***!
-  \********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Login.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Auth/Login.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
-
-/***/ }),
-
 /***/ "./resources/js/Pages/Auth/Register.vue?vue&type=script&lang=js&":
 /*!***********************************************************************!*\
   !*** ./resources/js/Pages/Auth/Register.vue?vue&type=script&lang=js& ***!
@@ -28190,6 +28181,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Dashboard.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Dashboard.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Login.vue?vue&type=script&lang=js&":
+/*!***************************************************************!*\
+  !*** ./resources/js/Pages/Login.vue?vue&type=script&lang=js& ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Login.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Login.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -28990,23 +28997,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Auth/Login.vue?vue&type=template&id=a2ac2cea&":
-/*!**************************************************************************!*\
-  !*** ./resources/js/Pages/Auth/Login.vue?vue&type=template&id=a2ac2cea& ***!
-  \**************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_template_id_a2ac2cea___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_template_id_a2ac2cea___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
-/* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_template_id_a2ac2cea___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Login.vue?vue&type=template&id=a2ac2cea& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Auth/Login.vue?vue&type=template&id=a2ac2cea&");
-
-
-/***/ }),
-
 /***/ "./resources/js/Pages/Auth/Register.vue?vue&type=template&id=e59c811e&":
 /*!*****************************************************************************!*\
   !*** ./resources/js/Pages/Auth/Register.vue?vue&type=template&id=e59c811e& ***!
@@ -29088,6 +29078,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_template_id_097ba13b___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_template_id_097ba13b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Dashboard.vue?vue&type=template&id=097ba13b& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Dashboard.vue?vue&type=template&id=097ba13b&");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Login.vue?vue&type=template&id=0004d9e0&":
+/*!*********************************************************************!*\
+  !*** ./resources/js/Pages/Login.vue?vue&type=template&id=0004d9e0& ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_template_id_0004d9e0___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_template_id_0004d9e0___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_template_id_0004d9e0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Login.vue?vue&type=template&id=0004d9e0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Login.vue?vue&type=template&id=0004d9e0&");
 
 
 /***/ }),
@@ -29600,351 +29607,412 @@ var render = function() {
       _c(
         "svg",
         {
+          staticClass: "ml-20 mt-10",
           attrs: {
-            id: "b3c5850d-3d23-4aad-a12c-b5e8440d4fde",
+            id: "a2525de1-ea14-4c9e-818b-1d269b9a5d3c",
             "data-name": "Layer 1",
             xmlns: "http://www.w3.org/2000/svg",
-            width: "624",
-            height: "558.12749",
-            viewBox: "0 0 924 458.12749"
+            width: "587.06663",
+            height: "428.12769",
+            viewBox: "0 0 787.06663 428.12769"
           }
         },
         [
-          _c("ellipse", {
-            attrs: {
-              cx: "448.17846",
-              cy: "584.7146",
-              rx: "21.53369",
-              ry: "6.76007",
-              transform: "translate(-396.01217 573.65899) rotate(-69.08217)",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("circle", {
-            attrs: {
-              cx: "408.37125",
-              cy: "617.2367",
-              r: "43.06735",
-              transform: "translate(-404.30923 700.52813) rotate(-80.78252)",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("rect", {
-            attrs: {
-              x: "250.74566",
-              y: "430.10005",
-              width: "13.08374",
-              height: "23.44171",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("rect", {
-            attrs: {
-              x: "276.91314",
-              y: "430.10005",
-              width: "13.08374",
-              height: "23.44171",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("ellipse", {
-            attrs: {
-              cx: "261.6488",
-              cy: "453.81434",
-              rx: "10.90314",
-              ry: "4.08868",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("ellipse", {
-            attrs: {
-              cx: "287.81628",
-              cy: "453.26918",
-              rx: "10.90314",
-              ry: "4.08868",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("circle", {
-            attrs: {
-              cx: "409.4616",
-              cy: "606.33348",
-              r: "14.71922",
-              transform: "translate(-155.63358 -208.64722) rotate(-1.68323)",
-              fill: "#fff"
-            }
-          }),
-          _c("circle", {
-            attrs: {
-              cx: "271.4616",
-              cy: "385.39723",
-              r: "4.90643",
-              fill: "#3f3d56"
-            }
-          }),
           _c("path", {
             attrs: {
               d:
-                "M366.59454,577.1852c-3.47748-15.57379,7.63867-31.31043,24.82861-35.1488s33.94423,5.67511,37.42171,21.24884-7.91492,21.31762-25.10486,25.156S370.072,592.75905,366.59454,577.1852Z",
-              transform: "translate(-138 -220.93625)",
-              fill: "#e6e6e6"
-            }
-          }),
-          _c("ellipse", {
-            attrs: {
-              cx: "359.86311",
-              cy: "597.25319",
-              rx: "6.76007",
-              ry: "21.53369",
-              transform: "translate(-471.98369 445.52283) rotate(-64.62574)",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("path", {
-            attrs: {
-              d:
-                "M387.21673,632.77358c0,4.21515,10.85327,12.53857,22.89656,12.53857s23.33515-11.867,23.33515-16.08209-11.29193.81775-23.33515.81775S387.21673,628.55843,387.21673,632.77358Z",
-              transform: "translate(-138 -220.93625)",
-              fill: "#fff"
-            }
-          }),
-          _c("path", {
-            attrs: {
-              d:
-                "M711.25977,500.2,664.48,546.37,558.75977,650.69l-2.13965,2.11L544.7002,664.56,519.71,639.87l-2.20019-2.17-45.69-45.13h-.00976L457.16992,578.1l-8.6499-8.55-25.76025-25.44-3.4795-3.44-41.06006-40.56a117.65792,117.65792,0,0,1-20.52-27.63c-.5-.91-.97022-1.83-1.43018-2.75A117.50682,117.50682,0,0,1,480.98,301.2h.01025c.37989.06.75.12,1.12989.2a113.60526,113.60526,0,0,1,11.91015,2.77A117.09292,117.09292,0,0,1,523.1499,317.1q1.4253.885,2.82031,1.8a118.17183,118.17183,0,0,1,18.46973,15.09l.3501-.35.3501.35a118.54248,118.54248,0,0,1,10.83007-9.58c.82959-.65,1.66993-1.29,2.50977-1.91a117.44922,117.44922,0,0,1,90.51025-21.06,111.92113,111.92113,0,0,1,11.91993,2.78q1.96507.55509,3.8999,1.2c1.04.34,2.08008.69,3.10986,1.07a116.42525,116.42525,0,0,1,24.39014,12.1q2.50488,1.63494,4.93994,3.42A117.54672,117.54672,0,0,1,711.25977,500.2Z",
-              transform: "translate(-138 -220.93625)",
-              fill: "#b25cf3"
-            }
-          }),
-          _c("path", {
-            attrs: {
-              d:
-                "M664.48,546.37,558.75977,650.69l-2.13965,2.11L544.7002,664.56,519.71,639.87l-2.20019-2.17-45.69-45.13c7.34034-1.71,18.62012.64,22.75,2.68,9.79,4.83,17.84034,12.76,27.78028,17.28A46.138,46.138,0,0,0,550.68018,615.66c17.81982-3.74,31.60986-17.52,43.77-31.08,12.15966-13.57,24.58984-28.13,41.67968-34.42C645.14014,546.84,654.81982,546.09,664.48,546.37Z",
-              transform: "translate(-138 -220.93625)",
-              opacity: "0.15"
-            }
-          }),
-          _c("path", {
-            attrs: {
-              d:
-                "M741.33984,335.92a118.15747,118.15747,0,0,0-52.52978-30.55c-1.31983-.37-2.62988-.7-3.96-1.01A116.83094,116.83094,0,0,0,667.46,301.57c-1.02-.1-2.04-.17-3.06982-.22a115.15486,115.15486,0,0,0-15.43018.06,118.39675,118.39675,0,0,0-74.83984,33.45l-.36035-.36-.35987.36a118.61442,118.61442,0,0,0-46.6997-28.08c-.99024-.32-1.99024-.63-2.99024-.92a119.67335,119.67335,0,0,0-41.62012-4.45c-.38964.02-.77978.05-1.15966.09a118.30611,118.30611,0,0,0-69.39991,29.4c-1.82031,1.6-3.61035,3.28-5.35009,5.02A119.14261,119.14261,0,0,0,379.54,463.47c.3501.94.73,1.87006,1.12988,2.8a118.153,118.153,0,0,0,25.51026,37.95l38.91992,38.42,3.06006,3.03,84.21972,83.13,2.16992,2.15,22.12012,21.84,17.08985,16.87L741.33984,504.21A119.129,119.129,0,0,0,741.33984,335.92ZM739.23,502.08,573.75977,665.44l-14.94971-14.76-21.6499-21.37-2.16993-2.14-82.58007-81.53-3.01026-2.97L408.2998,502.09A115.19343,115.19343,0,0,1,383.54,465.37c-.3999-.93-.78027-1.86-1.12988-2.79A116.13377,116.13377,0,0,1,408.2998,338.04q2.79054-2.79,5.71-5.34H414.02a115.38082,115.38082,0,0,1,66.48-28.16q4.905-.42,9.81982-.42c1.23,0,2.4502.02,3.68018.06a116.0993,116.0993,0,0,1,29.6499,4.8c.99024.29,1.98.6,2.96.93a114.15644,114.15644,0,0,1,29.33008,14.49,115.61419,115.61419,0,0,1,16.41016,13.64l1.06006,1.06.34961-.35.35009.35,1.06006-1.06a115.674,115.674,0,0,1,85.71-33.86c1.27.04,2.54.1,3.81006.19,1.02.06,2.04.13,3.05029.23a115.12349,115.12349,0,0,1,19.08985,3.35c1.33984.34,2.66992.71,3.98974,1.12A115.9591,115.9591,0,0,1,739.23,502.08Z",
-              transform: "translate(-138 -220.93625)",
-              fill: "#3f3d56"
-            }
-          }),
-          _c("path", {
-            attrs: {
-              d:
-                "M506.87988,308.71c-6.41992,5.07-13.31006,9.75-17.48,16.68-3.06982,5.12-4.3999,11.07-5.39013,16.95-1.91993,11.44-2.73975,23.16-6.5,34.12994-3.75,10.97-11.06983,21.45-21.91993,25.54-6.73,2.53-14.1499,2.39-21.31982,1.9-17.68994-1.2-35.5-4.37-51.41992-12.16-8.8999-4.36-17.53028-10.24-27.41992-10.89a25.39538,25.39538,0,0,0-6.02.33A117.494,117.494,0,0,1,480.98,301.2h.01025c.37989.06.75.12,1.12989.2a113.60526,113.60526,0,0,1,11.91015,2.77A117.48205,117.48205,0,0,1,506.87988,308.71Z",
-              transform: "translate(-138 -220.93625)",
-              opacity: "0.15"
-            }
-          }),
-          _c("path", {
-            attrs: {
-              d:
-                "M224.76412,625.76982a28.74835,28.74835,0,0,0,27.7608-4.89018c9.72337-8.16107,12.77191-21.60637,15.25242-34.056L275.11419,550l-15.36046,10.57663c-11.04633,7.60609-22.34151,15.45585-29.99,26.47289s-10.987,26.0563-4.8417,37.97726Z",
-              transform: "translate(-138 -220.93625)",
-              fill: "#e6e6e6"
-            }
-          }),
-          _c("path", {
-            attrs: {
-              d:
-                "M226.07713,670.35248c-1.55468-11.32437-3.15331-22.7942-2.06278-34.24.96851-10.16505,4.06971-20.09347,10.38337-28.23408a46.968,46.968,0,0,1,12.0503-10.9196c1.205-.76061,2.31413,1.14911,1.11434,1.90641a44.6513,44.6513,0,0,0-17.66194,21.31042c-3.84525,9.78036-4.46274,20.44179-3.80011,30.83136.40072,6.283,1.25,12.52474,2.1058,18.75851a1.14389,1.14389,0,0,1-.771,1.358,1.11066,1.11066,0,0,1-1.358-.771Z",
-              transform: "translate(-138 -220.93625)",
+                "M384.646,608.21367a400.444,400.444,0,0,1-3.77512,51.45474c-.08268.59886-.17275,1.19769-.25578,1.7965l-161.217-.9008c-.47335-.59474-.93926-1.19662-1.39067-1.8057-1.50514-2.01572-2.91582-4.08873-4.21082-6.23325-6.22436-10.3314-9.07393-22.42741-6.21838-30.773l.05114-.12968a14.64433,14.64433,0,0,1,2.85818-4.96628c6.5106-7.32867,19.67437-6.107,31.62022-.19158-10.71463-11.72839-19.24628-26.52779-19.89453-39.738-.63561-12.88512,6.10195-22.08987,13.40965-29.91231.23979-.25859.47953-.51.71927-.76137.11636-.12931.23974-.2514.35575-.38072,5.70157-5.96126,12.34862-11.83781,21.9698-11.12695,10.55192.781,22.25086,9.61942,30.45367,19.91855,8.20285,10.29191,13.65383,21.98365,19.179,33.39424,5.53227,11.4034,11.51773,23.09817,20.39527,32.84507-12.024-15.20882-21.71855-32.51307-25.2997-49.34272s-.42948-32.99345,10.28674-40.91958a25.06425,25.06425,0,0,1,10.97874-4.42987c.4623-.07683.93191-.13921,1.4089-.19432,9.92021-1.12872,21.76466,2.30225,31.84216,10.5034,11.09815,9.03006,18.79258,22.41676,22.621,35.1248C384.36161,584.153,384.76957,596.387,384.646,608.21367Z",
+              transform: "translate(-206.46668 -235.93615)",
               fill: "#f2f2f2"
             }
           }),
           _c("path", {
             attrs: {
               d:
-                "M241.05156,650.3137a21.16242,21.16242,0,0,0,18.439,9.51679c9.33414-.4431,17.11583-6.95774,24.12082-13.14262l20.71936-18.29363L290.618,627.738c-9.86142-.47193-19.97725-.91214-29.36992,2.12894s-18.05507,10.35987-19.77258,20.082Z",
-              transform: "translate(-138 -220.93625)",
-              fill: "#e6e6e6"
-            }
-          }),
-          _c("path", {
-            attrs: {
-              d:
-                "M221.68349,676.86232c7.48292-13.24055,16.16246-27.95592,31.67134-32.65919a35.34188,35.34188,0,0,1,13.32146-1.37546c1.41435.12195,1.06117,2.30212-.3506,2.18039a32.83346,32.83346,0,0,0-21.259,5.62435c-5.99423,4.0801-10.66138,9.75253-14.61162,15.76788-2.41964,3.68458-4.587,7.52548-6.75478,11.36122-.69277,1.22582-2.7177.341-2.01683-.89919Z",
-              transform: "translate(-138 -220.93625)",
-              fill: "#f2f2f2"
-            }
-          }),
-          _c("circle", {
-            attrs: {
-              cx: "300.09051",
-              cy: "76.05079",
-              r: "43.06733",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("rect", {
-            attrs: {
-              x: "280.4649",
-              y: "109.85048",
-              width: "13.08374",
-              height: "23.44171",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("rect", {
-            attrs: {
-              x: "306.63238",
-              y: "109.85048",
-              width: "13.08374",
-              height: "23.44171",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("ellipse", {
-            attrs: {
-              cx: "291.36798",
-              cy: "133.56477",
-              rx: "10.90314",
-              ry: "4.08868",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("ellipse", {
-            attrs: {
-              cx: "317.53552",
-              cy: "133.0196",
-              rx: "10.90314",
-              ry: "4.08868",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("circle", {
-            attrs: {
-              cx: "301.18084",
-              cy: "65.14766",
-              r: "14.71923",
+                "M279.16848,660.89808l-3.08277-.01723q-1.46826-.918-2.95039-1.81441c-.61167-.38609-1.23046-.7578-1.84957-1.13675q-15.33839-9.36783-30.8686-17.97134-15.51607-8.61064-31.18819-16.42786a1.292,1.292,0,0,1-.74272-1.47718.37233.37233,0,0,1,.05137-.108c.14573-.27357.47144-.38731.9468-.15359,1.28153.64258,2.57046,1.2852,3.8519,1.94224q15.71491,7.951,31.29494,16.69565,15.56928,8.7409,30.96116,18.25343c.21574.13117.4318.26958.64754.40075C277.21848,659.68858,278.19,660.29333,279.16848,660.89808Z",
+              transform: "translate(-206.46668 -235.93615)",
               fill: "#fff"
             }
           }),
-          _c("ellipse", {
-            attrs: {
-              cx: "444.18084",
-              cy: "289.08391",
-              rx: "4.88594",
-              ry: "4.92055",
-              transform: "translate(-212.34041 177.70056) rotate(-44.98705)",
-              fill: "#3f3d56"
-            }
-          }),
           _c("path", {
             attrs: {
               d:
-                "M396.31372,256.93569c-3.47748-15.57379,7.63865-31.31043,24.82866-35.14881s33.94421,5.67511,37.42169,21.24891-7.91492,21.31768-25.10486,25.156S399.79126,272.50954,396.31372,256.93569Z",
-              transform: "translate(-138 -220.93625)",
-              fill: "#e6e6e6"
-            }
-          }),
-          _c("ellipse", {
-            attrs: {
-              cx: "770.70947",
-              cy: "573.81404",
-              rx: "6.76007",
-              ry: "21.53369",
-              transform: "translate(-326.96946 400.5432) rotate(-39.51212)",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("circle", {
-            attrs: {
-              cx: "808.20127",
-              cy: "616.79758",
-              r: "43.06735",
-              transform: "translate(-226.36415 -83.51221) rotate(-9.21748)",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("rect", {
-            attrs: {
-              x: "676.74319",
-              y: "429.66089",
-              width: "13.08374",
-              height: "23.44171",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("rect", {
-            attrs: {
-              x: "650.5757",
-              y: "429.66089",
-              width: "13.08374",
-              height: "23.44171",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("ellipse", {
-            attrs: {
-              cx: "678.92379",
-              cy: "453.37519",
-              rx: "10.90314",
-              ry: "4.08868",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("ellipse", {
-            attrs: {
-              cx: "652.75631",
-              cy: "452.83005",
-              rx: "10.90314",
-              ry: "4.08868",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("path", {
-            attrs: {
-              d:
-                "M823.27982,593.8192c-13.57764-11.21939-21.12423-21.50665-10.95965-33.80776s29.41145-13.178,42.98908-1.9586,16.34444,30.28655,6.17986,42.58766S836.85746,605.03859,823.27982,593.8192Z",
-              transform: "translate(-138 -220.93625)",
-              fill: "#b25cf3"
-            }
-          }),
-          _c("circle", {
-            attrs: {
-              cx: "793.31102",
-              cy: "594.44957",
-              r: "14.71922",
-              transform: "translate(-155.11887 -197.37727) rotate(-1.68323)",
+                "M318.917,661.12017l-1.90628-.01065c-.43-.60168-.85249-1.20337-1.28244-1.80509q-15.15248-21.24829-30.2986-42.4966-24.80354-34.78677-49.59224-69.57343a1.22792,1.22792,0,0,1-.21449-.42c-.14133-.51347.23584-.81462.71927-.76137a1.44816,1.44816,0,0,1,1.00723.64105q13.90617,19.50841,27.80537,39.00232,24.6744,34.61277,49.34179,69.21823c1.046,1.46443,2.092,2.936,3.138,4.40046C318.06451,659.91681,318.49446,660.51853,318.917,661.12017Z",
+              transform: "translate(-206.46668 -235.93615)",
               fill: "#fff"
             }
           }),
-          _c("circle", {
+          _c("path", {
             attrs: {
-              cx: "650.1378",
-              cy: "369.86765",
-              r: "4.90643",
-              fill: "#3f3d56"
+              d:
+                "M361.38558,650.05c-.09728,3.21264-.30991,6.37409-.58761,9.50626q-.08064.89854-.16164,1.797l-2.00007-.01117c.06117-.59894.12234-1.19793.1761-1.797.42263-4.525.7225-9.10116.76322-13.80157a192.53934,192.53934,0,0,0-3.79046-38.81036,241.64483,241.64483,0,0,0-11.73951-40.32059,276.90175,276.90175,0,0,0-19.20756-39.893,1.0655,1.0655,0,0,1-.17656-.7086c.08251-.57.84148-.739,1.4089-.19432a1.65516,1.65516,0,0,1,.28672.36263q1.38395,2.37972,2.71738,4.7736a276.709,276.709,0,0,1,18.38389,40.03277,240.50138,240.50138,0,0,1,10.94448,40.38115A189.95289,189.95289,0,0,1,361.38558,650.05Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#fff"
             }
           }),
           _c("path", {
             attrs: {
               d:
-                "M771.06281,606.5725c-2.98056,2.98056-5.08788,12.64434-.89538,16.83684s16.51464-.26783,19.49516-3.24834-4.50917-3.35271-8.70164-7.54518S774.04337,603.59194,771.06281,606.5725Z",
-              transform: "translate(-138 -220.93625)",
-              fill: "#fff"
-            }
-          }),
-          _c("ellipse", {
-            attrs: {
-              cx: "841.39416",
-              cy: "654.27547",
-              rx: "6.76007",
-              ry: "21.53369",
-              transform: "translate(-316.14156 122.58618) rotate(-20.9178)",
-              fill: "#2f2e41"
-            }
-          }),
-          _c("path", {
-            attrs: {
-              d: "M1061,679.06375H139a1,1,0,0,1,0-2h922a1,1,0,0,1,0,2Z",
-              transform: "translate(-138 -220.93625)",
+                "M919.86492,567.54652c0-7.732-29.10157-14-65-14s-65,6.268-65,14c0,4.95544,11.96435,9.30621,30,11.79431v76.70569a6.5,6.5,0,0,0,13,0v-75.324c6.87207.53241,14.27685.824,22,.824s15.12793-.29163,22-.824v75.324a6.5,6.5,0,0,0,13,0V579.34083C907.90056,576.85273,919.86492,572.502,919.86492,567.54652Z",
+              transform: "translate(-206.46668 -235.93615)",
               fill: "#ccc"
+            }
+          }),
+          _c("circle", {
+            attrs: {
+              cx: "655.58561",
+              cy: "175.46783",
+              r: "28",
+              fill: "#2f2e41"
+            }
+          }),
+          _c("polygon", {
+            attrs: {
+              points:
+                "585.905 415.034 573.645 415.034 567.813 367.746 585.907 367.746 585.905 415.034",
+              fill: "#a0616a"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M564.88821,411.53062h23.64387a0,0,0,0,1,0,0v14.88687a0,0,0,0,1,0,0H550.00135a0,0,0,0,1,0,0v0A14.88686,14.88686,0,0,1,564.88821,411.53062Z",
+              fill: "#2f2e41"
+            }
+          }),
+          _c("polygon", {
+            attrs: {
+              points:
+                "566.768 408.192 555.07 404.521 563.662 357.656 580.926 363.073 566.768 408.192",
+              fill: "#a0616a"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M751.8009,635.4624h23.64387a0,0,0,0,1,0,0v14.88687a0,0,0,0,1,0,0H736.914a0,0,0,0,1,0,0v0A14.88686,14.88686,0,0,1,751.8009,635.4624Z",
+              transform: "translate(20.72246 -432.85442) rotate(17.42262)",
+              fill: "#2f2e41"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M777.2227,625.26043a4.46207,4.46207,0,0,1-1.572-.28614l-9.01929-3.38183a4.51574,4.51574,0,0,1-2.814-5.1836c2.27075-10.21,10.00976-44.9707,14.24731-63.61523,5.02588-22.11523,78.34278-26.22461,81.46119-26.38867l.25634-.01367,8.24756,10.36425c2.98023,9.57911,2.03565,17.05079-2.80762,22.208-14.13232,15.04688-56.32739,5.71-61.35888,4.52832L781.43608,622.363A4.513,4.513,0,0,1,777.2227,625.26043Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#2f2e41"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M790.2227,632.26043a4.46207,4.46207,0,0,1-1.572-.28614l-9.01929-3.38183a4.51574,4.51574,0,0,1-2.814-5.1836c2.27075-10.21,10.00976-44.9707,14.24731-63.61523,5.02588-22.11523,78.34278-26.22461,81.46119-26.38867l.25634-.01367,8.24756,10.36425c2.98023,9.57911,2.03565,17.05079-2.80762,22.208-14.13232,15.0459-56.32714,5.71-61.35888,4.52832L794.43608,629.363A4.513,4.513,0,0,1,790.2227,632.26043Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#2f2e41"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M764.128,488.24044a10.52657,10.52657,0,0,1,.88488,1.40152l49.32026,5.19623,7.09959-9.734,16.09071,8.79449L823.57892,517.52l-60.48739-15.42252a10.49579,10.49579,0,1,1,1.03642-13.857Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#a0616a"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M878.741,547.72234a4.50062,4.50062,0,0,1-2.04956-.501c-9.8623-5.01464-29.0664-13.69921-46.87451-15.5166a4.39222,4.39222,0,0,1-3.09546-1.75,4.5186,4.5186,0,0,1-.83374-3.51074c1.60694-8.89551,5.29321-31.54687,4.81836-49.70117a24.59626,24.59626,0,0,1,18.582-24.46777h0A79.86638,79.86638,0,0,1,859.201,450.321a24.79543,24.79543,0,0,1,27.55933,28.76172c-3.17578,18.81348-6.3772,45.08985-3.59473,63.43262a4.50689,4.50689,0,0,1-1.8186,4.34863A4.42877,4.42877,0,0,1,878.741,547.72234Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#bf63ff"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M831.61894,499.87078a4.49612,4.49612,0,0,1-1.78662-.37305l-12.8479-5.56152a4.5057,4.5057,0,0,1-2.342-5.917l9.93164-22.94239a11.49973,11.49973,0,1,1,21.10718,9.13575L835.7498,497.155a4.51063,4.51063,0,0,1-4.13086,2.71582Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#bf63ff"
+            }
+          }),
+          _c("circle", {
+            attrs: {
+              cx: "654.56199",
+              cy: "182.01901",
+              r: "24.56103",
+              fill: "#a0616a"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M836.02556,405.88808a88.59047,88.59047,0,0,0,38.32618,12.62844l-4.03991-4.84062a29.68836,29.68836,0,0,0,9.17074,1.82106c3.1302-.04875,6.40986-1.254,8.18641-3.83171a9.342,9.342,0,0,0,.62532-8.62974,17.69416,17.69416,0,0,0-5.56637-6.96015,33.1395,33.1395,0,0,0-30.84447-5.51247,19.80612,19.80612,0,0,0-9.21237,5.90942c-2.32839,2.87239-6.811,5.43157-5.6188,8.93167Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#2f2e41"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M865.15845,386.06722a75.48483,75.48483,0,0,0-27.463-17.7592c-6.63872-2.45942-13.86459-3.97895-20.80509-2.58226s-13.50411,6.19808-15.44041,13.00778c-1.58332,5.56836.05158,11.5638,2.50871,16.80555s5.73758,10.10248,7.72463,15.53986a35.46793,35.46793,0,0,1-35.689,47.56226c6.81938.91438,13.10516,4.11905,19.77076,5.82483s14.53281,1.59011,19.48624-3.18518c5.24092-5.05244,5.34585-13.26719,5.09246-20.54249q-.565-16.22248-1.13-32.445c-.1921-5.51543-.35615-11.20764,1.63288-16.35551s6.71617-9.65569,12.23475-9.60885c4.18253.0355,7.88443,2.56925,11.23866,5.068s6.90445,5.16474,11.07059,5.53641,8.92293-2.71145,8.61118-6.8825",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#2f2e41"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M819.73566,541.4132a11.00442,11.00442,0,1,1,4.24194-21.16357h.00024a10.56725,10.56725,0,0,1,1.31153.66455l44.74072-20.08691,1.25683-12.13428,19.28589-.51611-.12768,20.20166a10.88006,10.88006,0,0,1-7.86109,10.34277l-52.322,14.89307a10.25939,10.25939,0,0,1-.35913,1.019,11.04529,11.04529,0,0,1-10.16723,6.77978Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#a0616a"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M888.93937,498.07985a4.49622,4.49622,0,0,1-1.76188.47641l-13.97358.85916a4.5057,4.5057,0,0,1-4.76751-4.21507l-1.53376-24.95271a11.49972,11.49972,0,1,1,22.956-1.41237l1.534,24.95261a4.51061,4.51061,0,0,1-2.45329,4.292Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#bf63ff"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M779.56963,536.93615h79a3.5,3.5,0,0,1,3.5,3.5v0a3.5,3.5,0,0,1-3.5,3.5h-79a3.5,3.5,0,0,1-3.5-3.5v0A3.5,3.5,0,0,1,779.56963,536.93615Z",
+              transform: "translate(1431.6726 844.93615) rotate(180)",
+              fill: "#3f3d56"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M745.06964,537.43615v-49a6.50737,6.50737,0,0,1,6.5-6.5h89a6.50737,6.50737,0,0,1,6.5,6.5v49a6.50736,6.50736,0,0,1-6.5,6.5h-89A6.50736,6.50736,0,0,1,745.06964,537.43615Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#3f3d56"
+            }
+          }),
+          _c("circle", {
+            attrs: { cx: "589.60296", cy: "277", r: "6", fill: "#fff" }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M483.24743,455.27334a10.05575,10.05575,0,0,0-15.32037-1.74408l-31.75443-16.3901,1.974,18.46448,29.8519,12.73351a10.11027,10.11027,0,0,0,15.24888-13.06381Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#ffb8b8"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M455.02714,462.70552a4.505,4.505,0,0,1-3.66895.03914L421.196,449.66058A46.37347,46.37347,0,0,1,397.734,426.963l-15.85695-33.47116a14.49652,14.49652,0,1,1,22.90078-17.78059l27.8727,51.71356,25.73681,19.44154a4.5147,4.5147,0,0,1,1.58663,4.92131l-2.5261,8.15923a4.50568,4.50568,0,0,1-1.52373,2.21147A4.45458,4.45458,0,0,1,455.02714,462.70552Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#ccc"
+            }
+          }),
+          _c("circle", {
+            attrs: {
+              cx: "174.71248",
+              cy: "93.63093",
+              r: "24.56103",
+              fill: "#ffb8b8"
+            }
+          }),
+          _c("polygon", {
+            attrs: {
+              points:
+                "184.661 415.827 196.92 415.827 202.753 368.539 184.658 368.539 184.661 415.827",
+              fill: "#ffb8b8"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M388.50041,648.25979h38.53073a0,0,0,0,1,0,0v14.88687a0,0,0,0,1,0,0H403.38727a14.88686,14.88686,0,0,1-14.88686-14.88686v0A0,0,0,0,1,388.50041,648.25979Z",
+              transform: "translate(609.0948 1075.45169) rotate(179.99738)",
+              fill: "#2f2e41"
+            }
+          }),
+          _c("polygon", {
+            attrs: {
+              points:
+                "144.661 415.827 156.92 415.827 162.753 368.539 144.658 368.539 144.661 415.827",
+              fill: "#ffb8b8"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M348.50041,648.25979h38.53073a0,0,0,0,1,0,0v14.88687a0,0,0,0,1,0,0H363.38727a14.88686,14.88686,0,0,1-14.88686-14.88686v0A0,0,0,0,1,348.50041,648.25979Z",
+              transform: "translate(529.0948 1075.45352) rotate(179.99738)",
+              fill: "#2f2e41"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M346.84652,638.2278a4.49854,4.49854,0,0,1-1.075-3.55859l21.4646-160.98535,53.32861,9.05664,5.69141-3.415L411.53866,632.0696a4.51232,4.51232,0,0,1-4.09619,3.96387l-16.14771,1.3457a4.49918,4.49918,0,0,1-4.86645-4.74219l4.18066-72.74219a.50006.50006,0,0,0-.98193-.16015l-20.68311,76.70019a4.50773,4.50773,0,0,1-4.34472,3.3291h-14.367A4.49845,4.49845,0,0,1,346.84652,638.2278Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#2f2e41"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M383.77889,484.95241a3.53283,3.53283,0,0,0-4.51611-.18848l-10.66187,8.293a4.49611,4.49611,0,0,1-7.0874-2.30664c-5.22973-18.31543-17.07837-64.418-14.15942-96.86621,1.65454-18.39258,17.53711-32.37109,35.405-31.19824,12.21557.81445,20.252,7.86133,23.886,20.94434,8.92261,32.12207,18.72828,91.04394,20.60328,102.53027a4.48018,4.48018,0,0,1-2.13648,4.58887A32.939,32.939,0,0,1,408.42,495.44655C401.30087,495.44655,392.76473,492.968,383.77889,484.95241Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#ccc"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M387.8018,496.379a10.05578,10.05578,0,0,0-10.9788-10.8269l-14.87184-32.49319-9.84154,15.74731L367.741,497.24808a10.11027,10.11027,0,0,0,20.06081-.86908Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#ffb8b8"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M361.00961,484.81179a4.505,4.505,0,0,1-2.91114-2.2334l-15.65918-28.90918a46.3735,46.3735,0,0,1-4.45434-32.33887l8.17846-36.123a14.49652,14.49652,0,1,1,28.99268.14161l-9.98145,57.89257,8.25367,31.18067a4.51469,4.51469,0,0,1-1.78858,4.85156l-7.02295,4.86133a4.50565,4.50565,0,0,1-2.56372.7998A4.455,4.455,0,0,1,361.00961,484.81179Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#ccc"
+            }
+          }),
+          _c("polygon", {
+            attrs: {
+              points:
+                "166.697 173.828 157.697 211.828 170.697 243.828 161.697 212.828 166.697 173.828",
+              opacity: "0.2"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M367.16341,349.76393a16.53847,16.53847,0,0,1-6.388-1.15575c-.89411-.34457-1.82226-.62779-2.71471-.97258-7.8817-3.04509-13.07367-11.43907-13.25962-19.8865s4.18867-16.64645,10.68463-22.0498,14.90986-8.17746,23.33495-8.819c9.07522-.691,19.29422,1.61043,24.36535,9.16826,1.34985,2.01177,2.29389,4.45258,1.494,6.8816a4.40341,4.40341,0,0,1-1.24079,1.90593c-2.2647,2.01487-4.52249.49989-6.83116.366-3.17324-.184-6.02338,2.38457-7.04776,5.39355s-.57345,6.32161.25367,9.39068a23.45956,23.45956,0,0,1,1.18249,5.71008,5.74054,5.74054,0,0,1-2.37856,5.05472c-1.98288,1.19858-4.58693.50489-6.571-.69176s-3.69841-2.86047-5.84154-3.74105-5.02244-.68525-6.26984,1.26729a6.93473,6.93473,0,0,0-.79266,2.28861c-1.11828,5.09485-.86126,4.7948-1.97954,9.88965Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#2f2e41"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M580.11488,433.1146a4.31989,4.31989,0,0,1-.8074-3.70516,102.32847,102.32847,0,0,0-.0003-47.52515,4.321,4.321,0,0,1,.8077-3.70516,4.2478,4.2478,0,0,1,3.35525-1.62564h39.87222a4.30187,4.30187,0,0,1,4.2371,3.6057,167.48733,167.48733,0,0,1,0,50.97535,4.30187,4.30187,0,0,1-4.2371,3.6057H583.47013A4.2478,4.2478,0,0,1,580.11488,433.1146Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#e6e6e6"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M518.43373,292.49666a4.31845,4.31845,0,0,1-.80709-3.70455,102.33247,102.33247,0,0,0,0-47.52515,4.31848,4.31848,0,0,1,.80709-3.70456,4.24662,4.24662,0,0,1,3.35526-1.62625h39.87252a4.30258,4.30258,0,0,1,4.2371,3.60571,167.48727,167.48727,0,0,1,0,50.97534,4.30258,4.30258,0,0,1-4.2371,3.60571H521.789A4.24659,4.24659,0,0,1,518.43373,292.49666Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#e6e6e6"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M616.54546,339.53454a167.48663,167.48663,0,0,1,0-50.97534,4.30156,4.30156,0,0,1,4.23679-3.60571h39.87252a4.2466,4.2466,0,0,1,3.35526,1.62625,4.31916,4.31916,0,0,1,.8074,3.70456,102.32847,102.32847,0,0,0-.0003,47.52515,4.318,4.318,0,0,1-.8071,3.70455,4.24657,4.24657,0,0,1-3.35526,1.62625H620.78225A4.30156,4.30156,0,0,1,616.54546,339.53454Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#bf63ff"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M449.62243,337.75466a167.50643,167.50643,0,0,1,0-50.97535,4.30257,4.30257,0,0,1,4.2371-3.6057h39.87252a4.24661,4.24661,0,0,1,3.35526,1.62624,4.31916,4.31916,0,0,1,.80739,3.70456,102.32847,102.32847,0,0,0-.0003,47.52515,4.31805,4.31805,0,0,1-.80709,3.70456,4.24661,4.24661,0,0,1-3.35526,1.62624H453.85953A4.30257,4.30257,0,0,1,449.62243,337.75466Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#ff6584"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M459.48435,455.42648a4.39086,4.39086,0,0,1-.82066-3.766,104.00128,104.00128,0,0,0-.00031-48.30592,4.392,4.392,0,0,1,.821-3.766,4.31762,4.31762,0,0,1,3.41038-1.65235H503.422a4.37254,4.37254,0,0,1,4.3067,3.66495,170.23814,170.23814,0,0,1,0,51.81279,4.37254,4.37254,0,0,1-4.3067,3.66494H462.89473A4.31762,4.31762,0,0,1,459.48435,455.42648Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#bf63ff"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M219.04862,664.06385h773.294a1.19068,1.19068,0,1,0,0-2.38137h-773.294a1.19069,1.19069,0,1,0,0,2.38137Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#3f3d56"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M495.60138,419.75793H474.252a3.00328,3.00328,0,0,1-3-3V415.484a3.00328,3.00328,0,0,1,3-3h21.34937a3.00328,3.00328,0,0,1,3,3v1.27392A3.00328,3.00328,0,0,1,495.60138,419.75793Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#fff"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M495.60138,432.30529H474.252a3.00328,3.00328,0,0,1-3-3v-1.27392a3.00328,3.00328,0,0,1,3-3h21.34937a3.00328,3.00328,0,0,1,3,3v1.27392A3.00328,3.00328,0,0,1,495.60138,432.30529Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#fff"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M481.462,307.85022H460.53839a3.00328,3.00328,0,0,1-3-3v-1.17188a3.00328,3.00328,0,0,1,3-3H481.462a3.00328,3.00328,0,0,1,3,3v1.17188A3.00328,3.00328,0,0,1,481.462,307.85022Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#fff"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M615.14142,395.97961H594.21808a3.00328,3.00328,0,0,1-3-3v-1.17236a3.00328,3.00328,0,0,1,3-3h20.92334a3.00328,3.00328,0,0,1,3,3v1.17236A3.00328,3.00328,0,0,1,615.14142,395.97961Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#fff"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M615.14142,410.79309H594.21808a3.00328,3.00328,0,0,1-3-3v-1.17237a3.00328,3.00328,0,0,1,3-3h20.92334a3.00329,3.00329,0,0,1,3,3v1.17237A3.00329,3.00329,0,0,1,615.14142,410.79309Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#fff"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M615.14142,425.60656H594.21808a3.00328,3.00328,0,0,1-3-3V421.4342a3.00328,3.00328,0,0,1,3-3h20.92334a3.00328,3.00328,0,0,1,3,3v1.17236A3.00328,3.00328,0,0,1,615.14142,425.60656Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#fff"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M481.462,320.19494H460.53839a3.00328,3.00328,0,0,1-3-3v-1.17236a3.00328,3.00328,0,0,1,3-3H481.462a3.00328,3.00328,0,0,1,3,3v1.17236A3.00328,3.00328,0,0,1,481.462,320.19494Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#fff"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M553.639,257.83117H532.71564a3.00328,3.00328,0,0,1-3-3v-1.17236a3.00328,3.00328,0,0,1,3-3H553.639a3.00328,3.00328,0,0,1,3,3v1.17236A3.00328,3.00328,0,0,1,553.639,257.83117Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#fff"
+            }
+          }),
+          _c("path", {
+            attrs: {
+              d:
+                "M649.11285,310.86486H628.18927a3.00328,3.00328,0,0,1-3-3V306.6925a3.00328,3.00328,0,0,1,3-3h20.92358a3.00328,3.00328,0,0,1,3,3v1.17236A3.00328,3.00328,0,0,1,649.11285,310.86486Z",
+              transform: "translate(-206.46668 -235.93615)",
+              fill: "#fff"
             }
           })
         ]
@@ -33379,180 +33447,6 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Auth/Login.vue?vue&type=template&id=a2ac2cea&":
-/*!*****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Auth/Login.vue?vue&type=template&id=a2ac2cea& ***!
-  \*****************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* binding */ render),
-/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
-/* harmony export */ });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "jet-authentication-card",
-    {
-      scopedSlots: _vm._u([
-        {
-          key: "logo",
-          fn: function() {
-            return [_c("jet-authentication-card-logo")]
-          },
-          proxy: true
-        }
-      ])
-    },
-    [
-      _vm._v(" "),
-      _c("jet-validation-errors", { staticClass: "mb-4" }),
-      _vm._v(" "),
-      _vm.status
-        ? _c(
-            "div",
-            { staticClass: "mb-4 font-medium text-sm text-green-600" },
-            [_vm._v("\n        " + _vm._s(_vm.status) + "\n    ")]
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _c(
-        "form",
-        {
-          on: {
-            submit: function($event) {
-              $event.preventDefault()
-              return _vm.submit($event)
-            }
-          }
-        },
-        [
-          _c(
-            "div",
-            [
-              _c("jet-label", { attrs: { for: "email", value: "Email" } }),
-              _vm._v(" "),
-              _c("jet-input", {
-                staticClass: "mt-1 block w-full",
-                attrs: {
-                  id: "email",
-                  type: "email",
-                  required: "",
-                  autofocus: ""
-                },
-                model: {
-                  value: _vm.form.email,
-                  callback: function($$v) {
-                    _vm.$set(_vm.form, "email", $$v)
-                  },
-                  expression: "form.email"
-                }
-              })
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "mt-4" },
-            [
-              _c("jet-label", {
-                attrs: { for: "password", value: "Password" }
-              }),
-              _vm._v(" "),
-              _c("jet-input", {
-                staticClass: "mt-1 block w-full",
-                attrs: {
-                  id: "password",
-                  type: "password",
-                  required: "",
-                  autocomplete: "current-password"
-                },
-                model: {
-                  value: _vm.form.password,
-                  callback: function($$v) {
-                    _vm.$set(_vm.form, "password", $$v)
-                  },
-                  expression: "form.password"
-                }
-              })
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "block mt-4" }, [
-            _c(
-              "label",
-              { staticClass: "flex items-center" },
-              [
-                _c("jet-checkbox", {
-                  attrs: { name: "remember" },
-                  model: {
-                    value: _vm.form.remember,
-                    callback: function($$v) {
-                      _vm.$set(_vm.form, "remember", $$v)
-                    },
-                    expression: "form.remember"
-                  }
-                }),
-                _vm._v(" "),
-                _c("span", { staticClass: "ml-2 text-sm text-gray-600" }, [
-                  _vm._v("Remember me")
-                ])
-              ],
-              1
-            )
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "flex items-center justify-end mt-4" },
-            [
-              _vm.canResetPassword
-                ? _c(
-                    "inertia-link",
-                    {
-                      staticClass:
-                        "underline text-sm text-gray-600 hover:text-gray-900",
-                      attrs: { href: _vm.route("password.request") }
-                    },
-                    [
-                      _vm._v(
-                        "\n                Forgot your password?\n            "
-                      )
-                    ]
-                  )
-                : _vm._e(),
-              _vm._v(" "),
-              _c(
-                "jet-button",
-                {
-                  staticClass: "ml-4",
-                  class: { "opacity-25": _vm.form.processing },
-                  attrs: { disabled: _vm.form.processing }
-                },
-                [_vm._v("\n                Login\n            ")]
-              )
-            ],
-            1
-          )
-        ]
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Auth/Register.vue?vue&type=template&id=e59c811e&":
 /*!********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Auth/Register.vue?vue&type=template&id=e59c811e& ***!
@@ -33600,7 +33494,10 @@ var render = function() {
           _c(
             "div",
             [
-              _c("jet-label", { attrs: { for: "name", value: "Name" } }),
+              _c("jet-label", {
+                staticClass: "text-purple-200 font-bold\ttext-lg",
+                attrs: { for: "name", value: "Name" }
+              }),
               _vm._v(" "),
               _c("jet-input", {
                 staticClass: "mt-1 block w-full",
@@ -33627,7 +33524,10 @@ var render = function() {
             "div",
             { staticClass: "mt-4" },
             [
-              _c("jet-label", { attrs: { for: "email", value: "Email" } }),
+              _c("jet-label", {
+                staticClass: "text-purple-200 font-bold\ttext-lg",
+                attrs: { for: "email", value: "Email" }
+              }),
               _vm._v(" "),
               _c("jet-input", {
                 staticClass: "mt-1 block w-full",
@@ -33649,6 +33549,7 @@ var render = function() {
             { staticClass: "mt-4" },
             [
               _c("jet-label", {
+                staticClass: "text-purple-200 font-bold\ttext-lg",
                 attrs: { for: "password", value: "Password" }
               }),
               _vm._v(" "),
@@ -33677,6 +33578,7 @@ var render = function() {
             { staticClass: "mt-4" },
             [
               _c("jet-label", {
+                staticClass: "mt-4 text-purple-200 font-bold text-lg",
                 attrs: {
                   for: "password_confirmation",
                   value: "Confirm Password"
@@ -33769,7 +33671,7 @@ var render = function() {
                 "inertia-link",
                 {
                   staticClass:
-                    "underline text-sm text-gray-600 hover:text-gray-900",
+                    "underline text-sm text-purple-200 hover:text-purple-900",
                   attrs: { href: _vm.route("login") }
                 },
                 [_vm._v("\n                Already registered?\n            ")]
@@ -33778,7 +33680,8 @@ var render = function() {
               _c(
                 "jet-button",
                 {
-                  staticClass: "ml-4",
+                  staticClass:
+                    "ml-4 bg-purple-900 hover:bg-purple-700 hover:text-purple-100",
                   class: { "opacity-25": _vm.form.processing },
                   attrs: { disabled: _vm.form.processing }
                 },
@@ -34287,6 +34190,197 @@ var render = function() {
         ])
       ])
     ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Login.vue?vue&type=template&id=0004d9e0&":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Login.vue?vue&type=template&id=0004d9e0& ***!
+  \************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "jet-authentication-card",
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "logo",
+          fn: function() {
+            return [_c("jet-authentication-card-logo")]
+          },
+          proxy: true
+        }
+      ])
+    },
+    [
+      _vm._v(" "),
+      _c("jet-validation-errors", { staticClass: "mb-4" }),
+      _vm._v(" "),
+      _vm.status
+        ? _c(
+            "div",
+            { staticClass: "mb-4 font-medium text-sm text-green-600" },
+            [_vm._v("\n        " + _vm._s(_vm.status) + "\n    ")]
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _c(
+        "form",
+        {
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.submit($event)
+            }
+          }
+        },
+        [
+          _c(
+            "div",
+            [
+              _c("jet-label", {
+                staticClass: "text-purple-200 font-bold\ttext-lg",
+                attrs: { for: "email", value: "Email" }
+              }),
+              _vm._v(" "),
+              _c("jet-input", {
+                staticClass: "mt-1 block w-full",
+                attrs: {
+                  id: "email",
+                  type: "email",
+                  required: "",
+                  autofocus: ""
+                },
+                model: {
+                  value: _vm.form.email,
+                  callback: function($$v) {
+                    _vm.$set(_vm.form, "email", $$v)
+                  },
+                  expression: "form.email"
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "mt-4" },
+            [
+              _c("jet-label", {
+                staticClass: "text-purple-200 font-bold\ttext-lg",
+                attrs: { for: "password", value: "Password" }
+              }),
+              _vm._v(" "),
+              _c("jet-input", {
+                staticClass: "mt-1 block w-full",
+                attrs: {
+                  id: "password",
+                  type: "password",
+                  required: "",
+                  autocomplete: "current-password"
+                },
+                model: {
+                  value: _vm.form.password,
+                  callback: function($$v) {
+                    _vm.$set(_vm.form, "password", $$v)
+                  },
+                  expression: "form.password"
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "block mt-4" }, [
+            _c(
+              "label",
+              { staticClass: "flex items-center" },
+              [
+                _c("jet-checkbox", {
+                  attrs: { name: "remember" },
+                  model: {
+                    value: _vm.form.remember,
+                    callback: function($$v) {
+                      _vm.$set(_vm.form, "remember", $$v)
+                    },
+                    expression: "form.remember"
+                  }
+                }),
+                _vm._v(" "),
+                _c("span", { staticClass: "ml-2 text-sm text-purple-200" }, [
+                  _vm._v("Lembrar")
+                ])
+              ],
+              1
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "flex items-center justify-end mt-4" },
+            [
+              _vm.canResetPassword
+                ? _c(
+                    "inertia-link",
+                    {
+                      staticClass:
+                        "underline text-sm text-purple-200 hover:text-purple-900",
+                      attrs: { href: _vm.route("password.request") }
+                    },
+                    [
+                      _vm._v(
+                        "\n                Esqueceu sua senha?\n            "
+                      )
+                    ]
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              _c(
+                "jet-button",
+                {
+                  staticClass:
+                    "ml-4 bg-purple-900 hover:bg-purple-700 hover:text-purple-100",
+                  class: { "opacity-25": _vm.form.processing },
+                  attrs: { disabled: _vm.form.processing }
+                },
+                [_vm._v("\n                Login\n            ")]
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _vm.canRegister
+            ? _c(
+                "inertia-link",
+                {
+                  staticClass: "text-purple-200 text-sm underline",
+                  attrs: { href: _vm.route("register") }
+                },
+                [_vm._v("\n            Registrar\n        ")]
+              )
+            : _vm._e()
+        ],
+        1
+      )
+    ],
+    1
   )
 }
 var staticRenderFns = []
@@ -49799,8 +49893,6 @@ var map = {
 	"./Auth/ConfirmPassword.vue": "./resources/js/Pages/Auth/ConfirmPassword.vue",
 	"./Auth/ForgotPassword": "./resources/js/Pages/Auth/ForgotPassword.vue",
 	"./Auth/ForgotPassword.vue": "./resources/js/Pages/Auth/ForgotPassword.vue",
-	"./Auth/Login": "./resources/js/Pages/Auth/Login.vue",
-	"./Auth/Login.vue": "./resources/js/Pages/Auth/Login.vue",
 	"./Auth/Register": "./resources/js/Pages/Auth/Register.vue",
 	"./Auth/Register.vue": "./resources/js/Pages/Auth/Register.vue",
 	"./Auth/ResetPassword": "./resources/js/Pages/Auth/ResetPassword.vue",
@@ -49811,6 +49903,8 @@ var map = {
 	"./Auth/VerifyEmail.vue": "./resources/js/Pages/Auth/VerifyEmail.vue",
 	"./Dashboard": "./resources/js/Pages/Dashboard.vue",
 	"./Dashboard.vue": "./resources/js/Pages/Dashboard.vue",
+	"./Login": "./resources/js/Pages/Login.vue",
+	"./Login.vue": "./resources/js/Pages/Login.vue",
 	"./PrivacyPolicy": "./resources/js/Pages/PrivacyPolicy.vue",
 	"./PrivacyPolicy.vue": "./resources/js/Pages/PrivacyPolicy.vue",
 	"./Profile/DeleteUserForm": "./resources/js/Pages/Profile/DeleteUserForm.vue",
