@@ -29602,7 +29602,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "min-h-screen grid gap-1 grid-cols-2 bg-purple-400" },
+    { staticClass: "min-h-screen grid gap-1 grid-cols-2 bg-purple-500" },
     [
       _c(
         "svg",
@@ -33496,7 +33496,7 @@ var render = function() {
             [
               _c("jet-label", {
                 staticClass: "text-purple-200 font-bold\ttext-lg",
-                attrs: { for: "name", value: "Name" }
+                attrs: { for: "name", value: "Nome da equipe" }
               }),
               _vm._v(" "),
               _c("jet-input", {
@@ -33550,7 +33550,7 @@ var render = function() {
             [
               _c("jet-label", {
                 staticClass: "text-purple-200 font-bold\ttext-lg",
-                attrs: { for: "password", value: "Password" }
+                attrs: { for: "password", value: "Senha" }
               }),
               _vm._v(" "),
               _c("jet-input", {
@@ -33581,7 +33581,7 @@ var render = function() {
                 staticClass: "mt-4 text-purple-200 font-bold text-lg",
                 attrs: {
                   for: "password_confirmation",
-                  value: "Confirm Password"
+                  value: "Confirme a senha"
                 }
               }),
               _vm._v(" "),
@@ -33685,7 +33685,7 @@ var render = function() {
                   class: { "opacity-25": _vm.form.processing },
                   attrs: { disabled: _vm.form.processing }
                 },
-                [_vm._v("\n                Register\n            ")]
+                [_vm._v("\n                Registrar\n            ")]
               )
             ],
             1
@@ -34285,7 +34285,7 @@ var render = function() {
             [
               _c("jet-label", {
                 staticClass: "text-purple-200 font-bold\ttext-lg",
-                attrs: { for: "password", value: "Password" }
+                attrs: { for: "password", value: "Senha" }
               }),
               _vm._v(" "),
               _c("jet-input", {

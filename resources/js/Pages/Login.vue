@@ -17,7 +17,7 @@
             </div>
 
             <div class="mt-4">
-                <jet-label class="text-purple-200 font-bold	text-lg" for="password" value="Password" />
+                <jet-label class="text-purple-200 font-bold	text-lg" for="password" value="Senha" />
                 <jet-input id="password" type="password" class="mt-1 block w-full" v-model="form.password" required autocomplete="current-password" />
             </div>
 

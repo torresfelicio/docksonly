@@ -8,7 +8,7 @@
 
         <form @submit.prevent="submit">
             <div>
-                <jet-label class="text-purple-200 font-bold	text-lg" for="name" value="Name" />
+                <jet-label class="text-purple-200 font-bold	text-lg" for="name" value="Nome da equipe" />
                 <jet-input id="name" type="text" class="mt-1 block w-full" v-model="form.name" required autofocus autocomplete="name" />
             </div>
 
@@ -18,12 +18,12 @@
             </div>
 
             <div class="mt-4">
-                <jet-label class="text-purple-200 font-bold	text-lg" for="password" value="Password" />
+                <jet-label class="text-purple-200 font-bold	text-lg" for="password" value="Senha" />
                 <jet-input id="password" type="password" class="mt-1 block w-full" v-model="form.password" required autocomplete="new-password" />
             </div>
 
             <div class="mt-4">
-                <jet-label class="mt-4 text-purple-200 font-bold text-lg" for="password_confirmation" value="Confirm Password" />
+                <jet-label class="mt-4 text-purple-200 font-bold text-lg" for="password_confirmation" value="Confirme a senha" />
                 <jet-input id="password_confirmation" type="password" class="mt-1 block w-full" v-model="form.password_confirmation" required autocomplete="new-password" />
             </div>
 
@@ -45,7 +45,7 @@
                 </inertia-link>
 
                 <jet-button class="ml-4 bg-purple-900 hover:bg-purple-700 hover:text-purple-100" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                    Register
+                    Registrar
                 </jet-button>
             </div>
         </form>
