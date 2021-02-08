@@ -11,13 +11,13 @@
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   [Simple, fast routing engine](https://laravel.com/docs/routing).
+-   [Powerful dependency injection container](https://laravel.com/docs/container).
+-   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+-   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+-   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+-   [Robust background job processing](https://laravel.com/docs/queues).
+-   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
@@ -33,17 +33,17 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 
 ### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
+-   **[Vehikl](https://vehikl.com/)**
+-   **[Tighten Co.](https://tighten.co)**
+-   **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+-   **[64 Robots](https://64robots.com)**
+-   **[Cubet Techno Labs](https://cubettech.com)**
+-   **[Cyber-Duck](https://cyber-duck.co.uk)**
+-   **[Many](https://www.many.co.uk)**
+-   **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+-   **[DevSquad](https://devsquad.com)**
+-   **[Curotec](https://www.curotec.com/)**
+-   **[OP.GG](https://op.gg)**
 
 ## Contributing
 
@@ -60,3 +60,82 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Start Project Using Laradock
+
+Clone o laradock como submodulo utilizando o seguinte comando:
+
+```terminal
+git submodule init
+git submodule update
+```
+
+## Configurações Laradock
+
+Entre na pasta laradock e copie env-example para .env
+
+```terminal
+cp laradock/env-example laradock/.env
+```
+
+Você pode editar o .env arquivo para escolher quais softwares você deseja instalar no seu ambiente. Você sempre pode consultar o docker-compose.yml arquivo para ver como essas variáveis estão sendo utilizadas.
+
+Você também tem total liberdade para trocar a versões utilizadas de cada software.
+
+Ex:
+
+```php
+// laradock/.env
+
+PHP_VERSION=7.3
+
+MYSQL_VERSION=latest
+```
+
+Adicione um sufixo aos nomes dos containers para cada projeto.
+
+> Opcional
+
+```php
+// laradock/.env
+
+COMPOSE_PROJECT_NAME=laradock-NOMEPROJETO
+```
+
+#Executando
+Crie o ambiente e execute-o usando docker-compose.
+
+```terminal
+docker-compose up -d mysql phpmyadmin portainer
+```
+
+> nesta etapa vc pode escolher quais tecnologias de container utilizar no seu projeto.
+
+Se for a primeira vez o processo é um pouco demorado para fazer o download dos containers.
+
+## Usando MySQL
+
+### Ajustar essa configuração para utilizar o MySQL
+
+```php
+//laradock/.env
+
+MYSQL_VERSION=5.7
+```
+
+```terminal
+$ docker-compose up -d nginx mysql phpmyadmin portainer
+```
+
+## Usando Postgres
+
+```php
+$ docker-compose up -d nginx mysql phpmyadmin portainer
+```
+
+Após a iniciação o Laradock já trás tudo instalado no container:
+Composer
+NPM
+YARN
+
+Consulte a documentação para configurações adicionais [Laradock](https://laradock.io/).
